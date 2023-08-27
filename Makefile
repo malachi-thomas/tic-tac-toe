@@ -1,4 +1,6 @@
+MAIN_FILE = ./src/main.go
+
 make:
-	@go build -o ./bin/
+		@go build $(MAIN_FILE) -o ./bin/
 run:
-	@go run ./main.go
+	@go run $(MAIN_FILE)
